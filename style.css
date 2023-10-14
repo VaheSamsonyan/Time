@@ -1,0 +1,129 @@
+body {
+    background-image: url('background.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_block {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #58007a; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button_block:hover {
+    background-color: #7900a8; 
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.timezone_class {
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #230031;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timezone_class:hover {
+    background-color: Z#37004d;
+    transform: scale(1.05);
+}
+
+
+#component {
+    color: white;
+    border: 2px solid #58007a;
+    border-radius: 25px;
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px;
+}
+
+#content {
+    font-family: monospace;
+    font-size: 56px;
+    text-align: center;
+    color: #ffffff;
+    margin: 15px;
+    padding: 2px;
+}
+
+.disabled_style {
+    color: grey;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+    #block {
+        width: 90%;
+    }
+
+    .button_block {
+        font-size: 18px;
+        padding: 12px 24px; 
+    }
+
+    .button_block:hover {
+        transform: scale(1.05);
+    }
+
+
+    #component {
+        width: 90%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #content {
+        font-size: 32px; 
+        margin: 10px;
+    }
+    
+    .timezone_class {
+        font-size: 24px;
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 12px;
+        background-color: #7900a8; 
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .timezone_class:hover {
+        background-color: #a700d1; 
+        transform: scale(1.05);
+    }
+    
+}
